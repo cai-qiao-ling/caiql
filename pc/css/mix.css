@@ -1,0 +1,87 @@
+/* 放在父容器清浮动防止高度塌陷，前提父容器里面只有一个盒子 */
+
+.clearfix::before,
+.clearfix::after {
+    /* clearfix 公共类 凡是需要用到清浮动，
+            或者是父子元素顶部边距问题，直接引用该类名来处理 */
+    content: '';
+    display: table;
+    /* 指定用法，记住就行  table 不占据空间 0* 0 解决父子元素顶部边距问题*/
+    clear: both;
+    /* 清除浮动 */
+    font-size: 0;
+    height: 0;
+    /* 使伪元素不占用空间 */
+    zoom: 1;
+    /* 触发haslayout ，兼容IE 6 / 7 */
+}
+
+
+/* 清除元素的浮动 */
+
+.div_clear {
+    clear: both;
+}
+
+
+/* 文本多行省略 */
+
+.text_Ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    /* white-space: nowrap;  不换行 */
+}
+
+.text-Exlipse {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* 不换行 */
+}
+
+input {
+    outline: none;
+}
+
+
+/* 弹性盒子 */
+
+.flex_box {
+    display: flex;
+    display: -webkit-flex;
+}
+
+
+/* 弹性盒子居中 */
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    color: #fff;
+    font-weight: 600;
+}
+
+.black {
+    color: #000 !important;
+}
+
+.gray {
+    color: gray !important;
+}
+
+
+/* 不换行 */
+
+.nowrap {
+    white-space: nowrap;
+}

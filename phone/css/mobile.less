@@ -1,0 +1,197 @@
+@import url(./lessmixin.less);
+body{
+    background-color: #fff;
+}
+.m_header{
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(196, 193, 193, 0.5);
+}
+// 头部图标
+.m_header{
+    .nav_bar{
+        height: 0.375rem;
+        font-size: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        &>a{
+            display: inline-block;
+            i{
+                display: inline-block;
+                color: #fb7299;
+                font-size: 0.22rem;
+                width: 0.5225rem;
+                height: 0.26rem;
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 1.3648rem;
+            .ic_search_tab{
+                display: inline-block;
+                color: #d8d8d8;
+                width: 0.2rem;
+                height: 0.2rem;
+                font-size: 0.23rem;
+            }
+            .face{
+                width: 0.205rem;
+                height: 0.205rem;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .launch_btn{
+                width: 0.6143rem;
+                height: 0.205rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+// 头部导航条
+.m_header{
+    .navwrap{
+        .showwrap{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0;
+        }
+        
+        .v_switcher{
+            width: 2.8rem;
+            height: 0.35rem;
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            a{
+                text-align: center;
+                display: inline-block;
+                margin-right: 0.2rem;
+            }
+            span{
+                font-size: 0.14rem;
+                color: #747474;
+                white-space: nowrap;
+            }
+        }
+        .general_pulldown_s{
+            color: #747474;
+            font-size: 0.16rem;
+        }
+        .switchs_box{
+            margin-top: 0.2rem;
+            // height: 0.35rem;
+            display: flex;
+            display: none;
+            flex-wrap: wrap;
+            font-size: 0;
+            position: relative;
+            a{
+                display: inline-block;
+                margin-right: 0.15rem;
+                margin-bottom: 0.2rem;
+            }
+            
+            span{
+                font-size: 0.14rem;
+                color: #747474;
+                white-space: nowrap;
+            }
+            .general_pullup_s{
+                position: absolute;
+                bottom: 0.05rem;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #747474;
+                font-size: 0.16rem;
+            }
+        }
+    }
+}
+// 视频区
+.m_main{
+    padding: 0.9rem 0.1rem 0.1rem 0.1rem;
+    box-sizing: border-box;
+    .content_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .wrap_item{
+            width: 1.4725rem;
+            margin-bottom: 0.15rem;
+            .img{
+                width: 100%;
+                height: 0.8281rem;
+                border-radius: 0.05rem;
+                overflow: hidden;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .tool{
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 0 0.1rem;
+                    position: absolute;
+                    display: flex;
+                    color: #fff;
+                    font-size: 0.14rem;
+                    bottom: 0.1rem;
+                    justify-content: space-between;
+                    left: 0px;
+    
+                }
+            }
+            .desc{
+                margin-top: 0.1rem;
+                width: 100%;
+                font-size: 0.14rem;
+                .overtwo();
+                line-height: 1.25;
+            }
+            
+            
+        }
+
+    }
+}
+.openApp{
+    width: 2.8rem;
+    margin: auto;
+    height: 0.321rem;
+    background-color: #fb7299;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.14rem;
+    color: #fff;
+    border-radius: 0.2rem;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.15rem;
+    right: 0.15rem;
+    i{
+        font-size: 0.14rem;
+        margin-right: 0.1rem;
+    }
+}
